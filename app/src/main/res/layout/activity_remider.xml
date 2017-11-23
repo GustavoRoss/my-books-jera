@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Título -->
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp"
+        android:text="@string/title_main_activity"
+        android:textColor="@android:color/holo_green_dark"
+        android:textSize="32sp" />
+
+    <!-- Imagem do lembrete-->
+    <ImageView
+        android:id="@+id/reminder_image"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/reminder" />
+
+    <!-- Input do nome do lembrete -->
+    <EditText
+        android:id="@+id/reminder_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/reminder_image"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="@string/hint_reminder_name"
+        android:inputType="text" />
+
+    <!--select do livro que deve ser lembrado-->
+    <Spinner
+        android:id="@+id/spinner_books"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/reminder_name"
+        android:layout_alignStart="@+id/reminder_name"
+        android:layout_below="@+id/reminder_name" />
+    <!-- input para a data do lembrete -->
+    <EditText
+        android:id="@+id/reminder_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/reminder_name"
+        android:layout_below="@+id/reminder_name"
+        android:layout_marginTop="29dp"
+        android:ems="10"
+        android:hint="@string/hint_reminder_date"
+        android:inputType="date" />
+
+    <!-- Input da hora do lembrete -->
+    <EditText
+        android:id="@+id/reminder_hour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/friday"
+        android:layout_alignStart="@+id/reminder_date"
+        android:layout_marginBottom="11dp"
+        android:ems="10"
+        android:hint="@string/hint_reminder_hour"
+        android:inputType="time" />
+
+    <!--TODOS OS CHECK BOX DE CADA DIA DA SEMANA {INICIO}-->
+    <CheckBox
+        android:id="@+id/monday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/reminder_hour"
+        android:layout_below="@+id/reminder_date"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="52dp"
+        android:text="@string/monday" />
+
+    <CheckBox
+        android:id="@+id/tuesday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/monday"
+        android:layout_below="@+id/monday"
+        android:text="@string/tuesday" />
+
+    <CheckBox
+        android:id="@+id/wednesday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tuesday"
+        android:layout_below="@+id/tuesday"
+        android:text="@string/wednesday" />
+
+    <CheckBox
+        android:id="@+id/thursday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/wednesday"
+        android:layout_below="@+id/wednesday"
+        android:text="@string/thursday" />
+
+    <CheckBox
+        android:id="@+id/friday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/monday"
+        android:layout_alignBottom="@+id/monday"
+        android:layout_toEndOf="@+id/monday"
+        android:text="@string/friday" />
+
+    <CheckBox
+        android:id="@+id/saturday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/sunday"
+        android:layout_below="@+id/monday"
+        android:text="@string/saturday" />
+
+    <CheckBox
+        android:id="@+id/sunday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/saturday"
+        android:layout_toEndOf="@+id/monday"
+        android:text="@string/sunday" />
+
+    <CheckBox
+        android:id="@+id/all_days"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/sunday"
+        android:layout_below="@+id/sunday"
+        android:text="@string/all_days" />
+    <!--TODOS OS CHECK BOX DE CADA DIA DA SEMANA {FIM}-->
+
+
+    <!-- Botão de listar os lembretes cadastrados-->
+    <Button
+        android:id="@+id/list_reminders_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="26dp"
+        android:layout_marginEnd="21dp"
+        android:background="@android:color/holo_green_dark"
+        android:text="@string/list_reminders_button" />
+
+    <!-- Botão de cadastrar lembrete -->
+    <Button
+        android:id="@+id/register_reminder_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/list_reminders_activity"
+        android:layout_alignBottom="@+id/list_reminders_activity"
+        android:layout_alignEnd="@+id/reminder_image"
+        android:layout_marginEnd="14dp"
+        android:background="@android:color/holo_green_dark"
+        android:text="@string/register_reminder" />
+
+
+
+</RelativeLayout>

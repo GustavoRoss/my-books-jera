@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">MyBooks</string>
+    <string name="title_main_activity">Biblioteca da Jera</string>
+
+    <!--LIVROS-->
+    <string name="list_books_button">Listar livros</string>
+    <string name="book_saved">O livro foi salvo com sucesso</string>
+    <string name="book_updated">O Livro foi salvo com sucesso</string>
+    <string name="book_deleted">O Livro foi excluido com sucesso</string>
+    <string name="hint_book_name">Nome do Livro</string>
+    <string name="register_book">Cadastrar</string>
+    <string name="choose_image">Escolher imagem</string>
+    <string name="permission_danied">Você não permissão para isso!</string>
+    <!-- FIM LIVROS -->
+
+    <!--LEMBRETES-->
+    <string name="hint_reminder_name">Nome do lembrete</string>
+    <string name="hint_reminder_hour">Hora</string>
+    <string name="hint_reminder_date">Data</string>
+    <string name="register_reminder">Cadastrar Lembrete</string>
+    <string name="list_reminders_button">Listar Lembretes</string>
+    <string name="register_reminders_button">Cadastrar Lembretes</string>
+    <string name="reminder_saved">Lembrete salvo com sucesso!</string>
+    <string name="status_changed">Alterado com sucesso!</string>
+    <string name="update_status">Vamos com calma...</string>
+    <string name="sure_to_update">Tem certeza que deseja alterar status desse lembrete?</string>
+    <string name="reminder_deleted">Lembrete removido com sucesso!</string>
+    <string name="reminder_updated">Lembrete atualizado com sucesso!</string>
+    <string name="ok">Ok</string>
+    <string name="cancel">Cancelar</string>
+    <!--FIM LEMBRETES-->
+
+    <!-- DIAS DA SEMANA -->
+    <string name="monday">Segunda</string>
+    <string name="tuesday">Terça</string>
+    <string name="wednesday">Quarta</string>
+    <string name="thursday">Quinta</string>
+    <string name="friday">sexta</string>
+    <string name="saturday">Sábado</string>
+    <string name="sunday">Domingo</string>
+    <string name="all_days">Todos</string>
+    <string name="hint_qtd_pages">Qtd. de páginas</string>
+    <string name="check_to_completed">Completar lembrete?</string>
+
+
+
+    <!-- FIM DIAS DA SEMANA -->
+
+</resources>
